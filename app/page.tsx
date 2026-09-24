@@ -27,6 +27,7 @@ export default function Home() {
             <a className="text-white/65 transition hover:text-white" href="#why">Why us</a>
             <a className="text-white/65 transition hover:text-white" href="#vehicles">Vehicles</a>
             <a className="border border-[#d7a23b] px-5 py-3 text-[#f1c15c] transition hover:bg-[#d7a23b] hover:text-[#111516]" href="#contact">Get a quote <span className="ml-2">→</span></a>
+            <a className="rounded-full border border-white/35 px-5 py-3 text-white transition hover:border-[#f1c15c] hover:text-[#f1c15c]" href="#dealer-login">Dealer login</a>
           </nav>
           <a className="text-xs font-bold uppercase tracking-widest text-[#f1c15c] md:hidden" href="#contact">Quote →</a>
         </div>
@@ -35,11 +36,22 @@ export default function Home() {
       <section id="top" className="relative flex min-h-[680px] items-end overflow-hidden bg-[#182022] px-6 pb-20 pt-36 text-white lg:min-h-[760px] lg:px-10 lg:pb-28">
         <img src="/powersports-hero.png" alt="Adventure motorcycle on a desert road" className="absolute inset-0 h-full w-full object-cover object-center opacity-75" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0e1415]/95 via-[#111718]/65 to-[#111718]/20" />
-        <div className="relative z-[1] mx-auto w-full max-w-7xl">
-          <p className="mb-7 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.28em] text-[#f1c15c]"><span className="h-px w-10 bg-[#f1c15c]" /> The dealer advantage</p>
-          <h1 className="max-w-4xl font-serif text-5xl leading-[0.98] tracking-[-0.04em] sm:text-7xl lg:text-[96px]">Know the value.<br /><em className="font-normal text-[#f1c15c]">Move with confidence.</em></h1>
-          <p className="mt-8 max-w-xl text-lg leading-8 text-white/72">Fast, accurate wholesale appraisals for powersports dealerships — backed by a real purchase commitment.</p>
-          <div className="mt-10 flex flex-wrap items-center gap-5"><a href="#contact" className="bg-[#b61f27] px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] transition hover:bg-[#d02b34]">Start an appraisal <span className="ml-5">→</span></a><a href="#about" className="text-xs font-bold uppercase tracking-[0.16em] text-white/80 hover:text-white">Explore our approach <span className="ml-3 text-[#f1c15c]">↓</span></a></div>
+        <div className="relative z-[1] mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[minmax(0,1fr)_390px] lg:gap-16">
+          <div>
+            <p className="mb-7 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.28em] text-[#f1c15c]"><span className="h-px w-10 bg-[#f1c15c]" /> The dealer advantage</p>
+            <h1 className="max-w-4xl font-serif text-5xl leading-[0.98] tracking-[-0.04em] sm:text-7xl lg:text-[82px]">Know the value.<br /><em className="font-normal text-[#f1c15c]">Move with confidence.</em></h1>
+            <p className="mt-8 max-w-xl text-lg leading-8 text-white/72">Fast, accurate wholesale appraisals for powersports dealerships — backed by a real purchase commitment.</p>
+            <div className="mt-10 flex flex-wrap items-center gap-5"><a href="#contact" className="bg-[#b61f27] px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] transition hover:bg-[#d02b34]">Start an appraisal <span className="ml-5">→</span></a><a href="#about" className="text-xs font-bold uppercase tracking-[0.16em] text-white/80 hover:text-white">Explore our approach <span className="ml-3 text-[#f1c15c]">↓</span></a></div>
+          </div>
+          <aside id="dealer-login" className="rounded-[20px] border border-white/25 border-t-4 border-t-[#b61f27] bg-[#111516]/90 p-7 shadow-2xl backdrop-blur-xl sm:p-8" aria-labelledby="dealer-login-title">
+            <div className="flex items-start justify-between gap-4"><div><p className="inline-flex rounded-full border border-[#b61f27]/60 bg-[#b61f27]/15 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#f1c15c]">Dealer portal</p><h2 id="dealer-login-title" className="mt-5 font-serif text-3xl text-white">Welcome back.</h2></div><span className="flex h-10 w-10 items-center justify-center rounded-full border border-[#b61f27]/50 bg-[#b61f27]/20 text-[#f1c15c]" aria-hidden="true">↗</span></div>
+            <p className="mt-3 text-sm leading-6 text-white/55">Access your dealer dashboard and appraisal tools.</p>
+            <form className="mt-7 space-y-5" action="#dealer-login">
+              <label className="block text-[10px] font-bold uppercase tracking-[0.2em] text-white/55" htmlFor="dealer-email">Dealer email<input id="dealer-email" name="email" type="email" autoComplete="email" placeholder="you@dealership.com" className="mt-2 w-full rounded-lg border border-white/15 bg-white/10 px-4 py-3.5 text-sm font-normal normal-case tracking-normal text-white outline-none transition placeholder:text-white/30 focus:border-[#f1c15c] focus:ring-2 focus:ring-[#f1c15c]/20" /></label>
+              <label className="block text-[10px] font-bold uppercase tracking-[0.2em] text-white/55" htmlFor="dealer-password">Password<input id="dealer-password" name="password" type="password" autoComplete="current-password" placeholder="Enter your password" className="mt-2 w-full rounded-lg border border-white/15 bg-white/10 px-4 py-3.5 text-sm font-normal normal-case tracking-normal text-white outline-none transition placeholder:text-white/30 focus:border-[#f1c15c] focus:ring-2 focus:ring-[#f1c15c]/20" /></label>
+              <div className="flex items-center justify-between gap-4 pt-1"><a href="#contact" className="text-xs text-white/55 transition hover:text-white">Need access?</a><button type="submit" className="rounded-full bg-[#b61f27] px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-[#d02b34]">Sign in</button></div>
+            </form>
+          </aside>
         </div>
         <div className="absolute bottom-8 right-10 hidden text-right text-[10px] uppercase tracking-[0.25em] text-white/45 lg:block">Serving dealers nationwide<br /><span className="text-[#f1c15c]">Built on trust since day one</span></div>
       </section>
