@@ -19,7 +19,7 @@ export default function Home() {
       <header className="absolute left-0 right-0 top-8 z-10 border-b border-white/15 bg-[#151617]/90 text-white backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
           <a href="#top" className="flex items-center" aria-label="Powersport Appraisals home">
-            <img src="/powersports.png" alt="Powersports Appraisals — Trusted Evaluations" className="h-auto w-[230px] max-w-[52vw]" />
+            <img src="/white-transp.png" alt="Powersports Appraisals — Trusted Evaluations" className="h-auto w-[230px] max-w-[52vw]" />
           </a>
           <nav className="hidden items-center gap-8 text-xs font-medium uppercase tracking-[0.16em] md:flex">
             <a className="text-white/65 transition hover:text-white" href="#about">About</a>
