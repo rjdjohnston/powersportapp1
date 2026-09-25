@@ -17,10 +17,9 @@ export default function Home() {
         Talk to an appraiser <a className="ml-2 underline underline-offset-4" href="tel:3054842442">305.484.2442</a>
       </div>
       <header className="absolute left-0 right-0 top-8 z-10 border-b border-white/15 bg-[#151617]/90 text-white backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
-          <a href="#top" className="flex items-center gap-3" aria-label="Powersport Appraisals home">
-            <span className="flex h-10 w-10 items-center justify-center border border-[#e3262c] text-lg font-black text-[#e3262c]">PA</span>
-            <span className="leading-none"><strong className="block text-sm tracking-[0.2em]">POWERSPORT</strong><small className="block pt-1 text-[9px] tracking-[0.38em] text-[#e3262c]">APPRAISALS</small></span>
+        <div className="relative mx-auto flex h-[72px] max-w-7xl items-center justify-between px-6 lg:px-10">
+          <a href="#top" className="flex items-center" aria-label="Powersport Appraisals home">
+            <img src="/white-transp.png" alt="Powersports Appraisals — Trusted Evaluations" className="absolute left-6 top-1/2 h-auto w-[403px] max-w-none -translate-y-1/2 lg:left-10" />
           </a>
           <nav className="hidden items-center gap-8 text-xs font-medium uppercase tracking-[0.16em] md:flex">
             <a className="text-white/65 transition hover:text-white" href="#about">About</a>
